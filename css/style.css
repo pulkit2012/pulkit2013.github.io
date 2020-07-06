@@ -1,0 +1,355 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*top-nav and side-nav */ 
+.navBar{
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.navBar .logo{
+    padding-left: 20px;
+}
+.navBar .logo img{
+    display: block;
+    margin-top: 1px;
+    float: left;
+    width: 100px;
+    height: 55px;
+}
+.navBar .main-nav{
+    display: block;
+    padding-right: 16px;
+}
+.main-nav a{
+    float: right;
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+    transition: 0.3s;
+}
+.navBar .main-nav a:hover{
+    background-color: rgb(200, 200, 202);
+}
+.main{
+    margin-top: 25px;
+    float: right;
+    padding: 70px;
+}
+.side-nav{
+    overflow-x: hidden;
+    display: block;
+    width: 0px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: 0.5s;
+}
+.side-nav a{
+    display: block;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(185, 181, 181);
+    transition: 0.3s;
+}
+.side-nav a:hover:not(.closebtn){
+    background-color: rgb(206, 197, 197);
+    color: black;
+}
+.side-nav .closebtn{
+    font-size: 35px;
+    text-align: right;
+}
+.navBar .btn{
+    float: right;
+    padding: 16px;
+    display: none;
+}
+.navBar .btn button{
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.navBar .btn button:hover{
+    background-color: rgb(200, 200, 202);
+    cursor: pointer;
+}
+/*image after nav */
+.img1{
+    position: relative;
+    height: 1000px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("/img/back3.jpg");
+    min-height: 100%;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+}
+.img1 .content{
+    position: relative;
+    padding-top: 50%;
+}
+.img1:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(0,0,0,.4);
+  }
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.content h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(214, 214, 214); 
+    font-size: 60px;
+}
+.content p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(214, 214, 214);
+}
+.content button{
+    border: none;
+    outline: none;
+    padding: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(46, 43, 43);
+    color: yellow;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.content button:hover{
+    background-color: black;
+    color: rgb(255, 217, 0);
+}
+.About{
+    padding-top: 50px;
+   
+}
+.aboutTest{
+    letter-spacing: 2px;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+}
+.aboutTest h1{
+    font-family: 'Bangers', cursive;
+}
+.aboutText{
+    letter-spacing: 2px;
+    font-family: 'Galada', cursive;
+    text-align: center;
+}
+.aboutText h1{
+    font-family: 'Galada', cursive;
+}
+/* boxes */
+#boxes{
+    margin-top: 80px;
+  }
+  #boxes .box{
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding: 10px;
+  }
+  #boxes .box img{
+    width: 90px;
+    height: 90px;
+  }
+  .box p{
+    color: rgb(75, 75, 74);
+  }
+  /* The Design Section */
+  .design{
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: auto;
+      background-color: rgb(230, 230, 219);
+      margin-top: 50px;
+  }
+  .design .text{
+      float: left;
+      padding-top: 60px;
+      width: 50%;
+      height: 50%;
+      padding-right: 25px;
+      margin-left: 25px;
+  }
+  .design p{
+      font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .design h1{
+      font-family: 'Bangers', cursive;
+      letter-spacing: 3px;
+  }
+  .design .img2{
+      padding-top: 60px;
+      padding-left: 100px;
+      width: 600px;
+      height: 400px;
+      padding-bottom: 50px;
+      float: left;
+  }
+  .design .img2 img{
+      border-radius: 25px;
+      width: 100%;
+      height: 100%;
+  }
+  .design button{
+     padding: 16px;
+     border: none;
+     outline: none;
+    background-color: rgb(46, 43, 43);
+    color: yellow;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .design button:hover{
+    background-color: black;
+    color: rgb(255, 217, 0);
+  }
+  /* Team Section */  
+  .column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  .card img{
+      height: 300px;
+      width: 90%;
+      object-fit: cover;
+  }
+/* pricing section */
+.container1{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+#boxes1{
+    margin-top: 80px;
+  }
+  #boxes1 .box1{
+    float: left;
+    text-align: center;
+    width: 33%;
+    padding: 10px;
+  }
+  #boxes1 .box1 img{
+    width: 90px;
+    height: 90px;
+  }
+  .box1 p{
+    color: rgb(75, 75, 74);
+  }
+  .box1 a{
+      text-decoration: none;
+      background-color:  rgb(46, 43, 43);
+      color: yellow;
+      padding: 15px;
+      border-radius: 6px;
+      transition: 0.3s;
+  }
+  .box1 a:hover{
+    background-color: black;
+    color: rgb(255, 217, 0);
+  }
+  
+/* Contact Section */
+.footer h1{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+/* Media Queries */
+@media screen and (max-width:600px){
+    .navBar .main-nav{
+        display: none;
+    }
+    .navBar .btn{
+        display: block;
+    }
+    #boxes .box{
+        float: none;
+        padding-top: 25px;
+        text-align: center;
+        width: 100%;
+    }
+    .design .text{
+        float: none;
+        width: 100%;
+    }
+    .design .img2{
+        padding-left: 10px;
+        padding-right: 10px;
+        float: none;
+        width: 100%;
+    }
+    .column {
+        width: 100%;
+        display: block;
+      }
+      #boxes1 .box1{
+        float: none;
+        padding-top: 25px;
+        text-align: center;
+        width: 100%;
+    }
+    #boxes1 .box1:not(:first-child){
+        padding-top: 100px;
+    }
+    .content h1{
+        font-size: 30px;
+    }
+}
